@@ -18,7 +18,12 @@ function sagu {
 	sudo apt-get update
 }
 
+# Upgrade packages
+function sagug {
+	sudo apt-get upgrade -y
+}
+
 # Update cache, upgrade packages, remove unneeded package(s) and update Atom packages.
 function update {
-	sudo apt-get update && sudo apt-get upgrade -y && apmup
+	sagu && sagug && apmup
 }
