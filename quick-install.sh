@@ -6,26 +6,26 @@ fi
 # Get openssh, if not pre-installed and Zsh
 sudo apt-get install -y openssh-server zsh
 
-# Clone debian-scripts repo
-if ! [[ -d $HOME/GitHub/debian-scripts ]] || ! [[ -d $HOME/GitHub/mine/debian-scripts ]]; then
-  git clone https://github.com/fusion809/debian-scripts $HOME/GitHub/mine/debian-scripts
+# Clone pclinuxos-scripts repo
+if ! [[ -d $HOME/GitHub/pclinuxos-scripts ]] || ! [[ -d $HOME/GitHub/mine/pclinuxos-scripts ]]; then
+  git clone https://github.com/fusion809/pclinuxos-scripts $HOME/GitHub/mine/pclinuxos-scripts
   # Copy across
-  cp -a $HOME/GitHub/mine/debian-scripts/{Shell,.bashrc,.zshrc} $HOME/
-  sudo cp -a $HOME/GitHub/mine/debian-scripts/root/{Shell,.bashrc,.zshrc} /root/
-elif [[ -d $HOME/GitHub/debian-scripts ]]; then
-  cd $HOME/GitHub/debian-scripts
+  cp -a $HOME/GitHub/mine/pclinuxos-scripts/{Shell,.bashrc,.zshrc} $HOME/
+  sudo cp -a $HOME/GitHub/mine/pclinuxos-scripts/root/{Shell,.bashrc,.zshrc} /root/
+elif [[ -d $HOME/GitHub/pclinuxos-scripts ]]; then
+  cd $HOME/GitHub/pclinuxos-scripts
   git pull origin master
   cd -
   # Copy across
-  cp -a $HOME/GitHub/debian-scripts/{Shell,.bashrc,.zshrc} $HOME/
-  sudo cp -a $HOME/GitHub/debian-scripts/root/{Shell,.bashrc,.zshrc} /root/
-elif [[ -d $HOME/GitHub/mine/debian-scripts ]]; then
-  cd $HOME/GitHub/mine/debian-scripts
+  cp -a $HOME/GitHub/pclinuxos-scripts/{Shell,.bashrc,.zshrc} $HOME/
+  sudo cp -a $HOME/GitHub/pclinuxos-scripts/root/{Shell,.bashrc,.zshrc} /root/
+elif [[ -d $HOME/GitHub/mine/pclinuxos-scripts ]]; then
+  cd $HOME/GitHub/mine/pclinuxos-scripts
   git pull origin master
   cd -
   # Copy across
-  cp -a $HOME/GitHub/mine/debian-scripts/{Shell,.bashrc,.zshrc} $HOME/
-  sudo cp -a $HOME/GitHub/mine/debian-scripts/root/{Shell,.bashrc,.zshrc} /root/
+  cp -a $HOME/GitHub/mine/pclinuxos-scripts/{Shell,.bashrc,.zshrc} $HOME/
+  sudo cp -a $HOME/GitHub/mine/pclinuxos-scripts/root/{Shell,.bashrc,.zshrc} /root/
 fi
 
 if ! [[ -d $HOME/.oh-my-zsh ]]; then
