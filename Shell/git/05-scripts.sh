@@ -43,7 +43,7 @@ function aset {
   read yn
   if [[ $yn == 'y' ]]; then
     gitc archiso fedora-ISO \
-      arch-scripts centos-scripts debian-scripts fedora-scripts freebsd-scripts gentoo-scripts Linux-scripts mageia-scripts opensuse-scripts sabayon-scripts \
+      arch-scripts centos-scripts debian-scripts fedora-scripts freebsd-scripts gentoo-scripts Linux-scripts mageia-scripts opensuse-scripts pclinuxos-scripts sabayon-scripts \
       atom atom-installer \
       arch-builder arch-setup gentoo-packer sabayon-packer \
       fusion809.github.io hexo-site hexo-tag-markdown hubpress.io pelican-site \
@@ -69,7 +69,7 @@ function aset {
     printf "Do you want to clone all the OS shell script repos? [y/n] "
     read yn3
     if [[ $yn3 == 'y' ]]; then
-      gitc {arch,centos,debian,fedora,freebsd,gentoo,Linux,mageia,opensuse,sabayon}-scripts
+      gitc {arch,centos,pclinuxos,fedora,freebsd,gentoo,Linux,mageia,opensuse,sabayon}-scripts
     fi
 
     # Clone all config repos

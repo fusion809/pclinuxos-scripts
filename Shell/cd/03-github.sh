@@ -16,7 +16,7 @@ function cdai {
 }
 
 function cdd {
-	cd $GHUBM/debian-scripts
+	cd $GHUBM/pclinuxos-scripts
 }
 
 alias cdds=cdd
