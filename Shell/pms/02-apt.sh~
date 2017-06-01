@@ -25,5 +25,5 @@ function sagug {
 
 # Update cache, upgrade packages, remove unneeded package(s) and update Atom packages.
 function update {
-	sagu && sagug
+	sagu && sagug && apmup
 }
