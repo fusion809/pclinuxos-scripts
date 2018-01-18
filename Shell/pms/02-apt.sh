@@ -20,7 +20,7 @@ function sagu {
 
 # Upgrade packages
 function sagug {
-	sudo apt-get upgrade -y
+	sudo apt-get dist-upgrade -y
 }
 
 # Update cache, upgrade packages, remove unneeded package(s) and update Atom packages.
